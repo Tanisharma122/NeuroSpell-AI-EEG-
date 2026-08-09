@@ -4,7 +4,7 @@ import { useState, useEffect, useRef, useCallback } from 'react'
 import { SiteNav } from '@/components/site-nav'
 import { SiteFooter } from '@/components/site-footer'
 
-const API = 'http://localhost:8000'
+const API = 'http://127.0.0.1:8000'
 
 const GRID: string[][] = [
   ['A','B','C','D','E','F'],

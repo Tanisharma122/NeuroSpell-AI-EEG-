@@ -67,13 +67,15 @@ export function Hero() {
             </div>
 
             <div className="relative aspect-video">
-              <Image
-                src="/hero-montage.png"
-                alt="NeuroSpell AI BCI HUD showing real-time EEG waveforms and P300 speller matrix"
-                fill
-                priority
-                className="object-cover"
-              />
+              <video 
+                autoPlay 
+                loop 
+                muted 
+                playsInline 
+                className="absolute inset-0 w-full h-full object-cover"
+              >
+                <source src="/hero-video.mp4" type="video/mp4" />
+              </video>
               <div className="absolute inset-0 bg-gradient-to-t from-background/60 via-transparent to-transparent" />
 
               {/* BCI activity overlay */}
